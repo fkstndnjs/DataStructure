@@ -32,6 +32,7 @@ int main(void)
 	int i;
 	
 	i=BSearch(arr, sizeof(arr)/sizeof(int), 7);
+	
 	if(i==-1)
 		puts("Å½»ö ½ÇÆÐ");
 	else

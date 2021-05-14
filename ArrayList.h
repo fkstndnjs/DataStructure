@@ -5,11 +5,10 @@
 #define FALSE 0
 
 #define LIST_LEN 100
-typedef int LData;
 
 typedef struct
 {
-	Ldata arr[LIST_LEN];
+	int arr[LIST_LEN];
 	int numOfData;
 	int curPosition;
 } ArrayList;
@@ -17,12 +16,12 @@ typedef struct
 typedef ArrayList List;
 
 void ListInit(List * plist);
-void LInsert(List * plist, Ldata data);
+void LInsert(List * plist, int data);
 
-int LFirst(List * plist, LData * pdata);
-int LNext(List * plist, LData * pdata);
+int LFirst(List * plist, int * pdata);
+int LNext(List * plist, int * pdata);
 
-LData LRemove(List * plist);
+int LRemove(List * plist);
 int LCount(List * plist);
 
 #endif

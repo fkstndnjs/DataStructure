@@ -1,15 +1,15 @@
-# Project: ArrayList2
+# Project: 3-2
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = ListMain2.o ArrayList2.o
-LINKOBJ  = ListMain2.o ArrayList2.o
+OBJ      = NameCard.o NameCardMain.o ArraList3.o
+LINKOBJ  = NameCard.o NameCardMain.o ArraList3.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = ArrayList2.exe
+BIN      = 3-2.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,8 +24,11 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-ListMain2.o: ListMain2.c
-	$(CC) -c ListMain2.c -o ListMain2.o $(CFLAGS)
+NameCard.o: NameCard.c
+	$(CC) -c NameCard.c -o NameCard.o $(CFLAGS)
 
-ArrayList2.o: ArrayList2.c
-	$(CC) -c ArrayList2.c -o ArrayList2.o $(CFLAGS)
+NameCardMain.o: NameCardMain.c
+	$(CC) -c NameCardMain.c -o NameCardMain.o $(CFLAGS)
+
+ArraList3.o: ArraList3.c
+	$(CC) -c ArraList3.c -o ArraList3.o $(CFLAGS)

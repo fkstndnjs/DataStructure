@@ -10,4 +10,4 @@ void LInsert(List * plist, Data data)
 	plist->head->next = newNode;
 
 	(plist->numOfData)++;
-}66
+}

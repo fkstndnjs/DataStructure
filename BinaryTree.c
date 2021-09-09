@@ -75,3 +75,13 @@ void PostorderTraverse(BTreeNode * bt, void (*fptr)(int))
 	PostorderTraverse(bt->right, fptr);
 	fptr(bt->data);
 }
+
+void DeleteTree(BTreeNode * bt)
+{
+	if(bt==NULL)
+		return;
+	
+	DeleteTree(bt->left);
+	DeleteTree(bt->right);
+	free(bt);
+}

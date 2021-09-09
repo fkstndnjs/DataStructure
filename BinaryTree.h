@@ -20,4 +20,8 @@ BTreeNode * GetRightSubTree(BTreeNode * bt);
 void MakeLeftSubTree(BTreeNode * main, BTreeNode * sub);
 void MakeRightSubTree(BTreeNode * main, BTreeNode * sub);
 
+void PreorderTraverse(BTreeNode * bt, void (*fptr)(int));
+void InorderTraverse(BTreeNode * bt, void (*fptr)(int));
+void PostorderTraverse(BTreeNode * bt, void (*fptr)(int));
+
 #endif

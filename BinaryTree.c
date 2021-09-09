@@ -45,3 +45,33 @@ void MakeRightSubTree(BTreeNode * main, BTreeNode * sub)
 		
 	main->right=sub;
 }
+
+void PreorderTraverse(BTreeNode * bt, void (*fptr)(int))
+{
+	if(bt==NULL)
+		return;
+		
+	fptr(bt->data);
+	PreorderTraverse(bt->left, fptr);
+	PreorderTraverse(bt->right, fptr);
+}
+
+void InorderTraverse(BTreeNode * bt, void (*fptr)(int))
+{
+	if(bt==NULL)
+		return;
+		
+	InorderTraverse(bt->left, fptr);
+	fptr(bt->data);
+	InorderTraverse(bt->right, fptr);
+}
+
+void PostorderTraverse(BTreeNode * bt, void (*fptr)(int))
+{
+	if(bt==NULL)
+		return;
+		
+	PostorderTraverse(bt->left, fptr);
+	PostorderTraverse(bt->right, fptr);
+	fptr(bt->data);
+}

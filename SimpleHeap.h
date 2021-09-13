@@ -21,7 +21,7 @@ typedef struct _heap
 	HeapElem heapArr[HEAP_LEN];
 } Heap;
 
-void HeapInt(Heap * ph);
+void HeapInit(Heap * ph);
 int HIsEmpty(Heap * ph);
 
 void HInsert(Heap * ph, HData data, Priority pr);

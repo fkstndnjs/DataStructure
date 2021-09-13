@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=SimpleHeap.c
+FileName=..\Data_Structures_Chapter9\SimpleHeap.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=SimpleHeapMain.c
+FileName=SimpleMain.c
 CompileCpp=0
 Folder=
 Compile=1

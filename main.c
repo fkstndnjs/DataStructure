@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "SimpleHeap2.h"
+#include "UsefulHeap.h"
 
 int DataPriorityComp(char ch1, char ch2) // 우선 순위 비교 함수 
 {

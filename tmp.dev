@@ -1,6 +1,6 @@
 [Project]
-FileName=SimpleHeap_v2.dev
-Name=SimpleHeap_v2
+FileName=tmp.dev
+Name=tmp
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=SimpleHeap2.c
+FileName=main.c
 CompileCpp=0
 Folder=
 Compile=1
@@ -60,8 +60,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit2]
-FileName=SimpleHeap2.h
+[Unit4]
+FileName=UsefulHeap.h
 CompileCpp=0
 Folder=
 Compile=1
@@ -71,7 +71,17 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=SimpleHeapMain2.c
+FileName=UsefulHeap.h
+CompileCpp=0
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=UsefulHeap.c
 CompileCpp=0
 Folder=
 Compile=1

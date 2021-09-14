@@ -3,7 +3,7 @@
 
 int PriComp(int n1, int n2)
 {
-	return n2-n1;
+	return n1-n2;
 }
 
 void HeapSort(int arr[], int n, int (*comp)(int, int))

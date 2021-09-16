@@ -12,7 +12,7 @@ void BSTMakeAndInit(BTreeNode ** pRoot);
 BSTData BSTGetNodeData(BTreeNode * bst);
 
 // BST를 대상으로 데이터 저장(노드의 생성과정 포함)
-void BSTInsert(BtreeNode ** pRoot, BSTData data);
+void BSTInsert(BTreeNode ** pRoot, BSTData data);
 
 // BST를 대상으로 데이터 탐색
 BTreeNode * BSTSearch(BTreeNode * bst, BSTData target);

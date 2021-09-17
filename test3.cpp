@@ -2,12 +2,17 @@
 
 typedef struct
 {
-	int (*fptr)(int);
+	int (*fptr)(int a);
 } Test;
 
 int Func(int num)
 {
 	return num;
+}
+
+void Init(Test * ph, int (*fptr)(int a))
+{
+	ph->fptr = fptr;
 }
 
 int main(void)
@@ -16,7 +21,7 @@ int main(void)
 	
 	Test b;
 	
-	b.fptr=Func;
+	Init(&b, Func);
 	
 	printf("%d", b.fptr(a));
 	

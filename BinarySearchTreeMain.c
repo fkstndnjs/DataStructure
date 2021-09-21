@@ -13,10 +13,10 @@ int main(void)
 	BSTInsert(&bstRoot, 6);
 	BSTInsert(&bstRoot, 2);
 	BSTInsert(&bstRoot, 8);
-	BSTInsert(&bstRoot, 4);
+//	BSTInsert(&bstRoot, 4);
 	BSTInsert(&bstRoot, 3);
 	BSTInsert(&bstRoot, 5);
-	BSTInsert(&bstRoot, 7);
+//	BSTInsert(&bstRoot, 7);
 
 	sNode = BSTSearch(bstRoot, 1);
 	if(sNode == NULL)

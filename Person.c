@@ -15,10 +15,11 @@ void ShowPerInfo(Person * p)
 	printf("ÁÖ¼Ò: %s \n\n", p->addr);
 }
 
-Person * MakePersonData(int ss, char * name, char * addr)
+Person * MakePersonData(int ssn, char * name, char * addr)
 {
-	Person * newP = (Person *)malloc(sizeof(Person));
-	newP->ssn=ssn;
+	Person * newP = (Person*)malloc(sizeof(Person));
+
+	newP->ssn = ssn;
 	strcpy(newP->name, name);
 	strcpy(newP->addr, addr);
 	return newP;
